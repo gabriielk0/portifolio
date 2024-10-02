@@ -1,38 +1,38 @@
 
-import styles from './Slidebar.module.css'
+import styles from './Sidebar.module.css'
 
 export default function Sidebar() {
   return (
     <aside>
-      <img src={Logo} alt="Logo do CodeConnect" />
+      <img src="http://github.com/gabriielk0.png" alt="Logo do CodeConnect" className={styles.imagem}/>
       <nav>
         <ul className="lista-sidebar">
           <li>
-            <a href="#" className="item__link--publicacao">
+            <a href="#" className={styles.item__link}>
               Publicar
             </a>
           </li>
           <li>
             <a href="#" className="item__link item__link--ativo">
-              <img src={Feed} alt="" />
+              <img src="{Feed}" alt="" />
               <span>Feed</span>
             </a>
           </li>
           <li>
             <a href="#" className="item__link">
-              <img src={Account} alt="" />
+              <img src="{Account}" alt="" />
               <span>Perfil</span>
             </a>
           </li>
           <li>
             <a href="#" className="item__link">
-              <img src={Info} alt="" />
+              <img src="{Info}" alt="" />
               <span>Sobre Nós</span>
             </a>
           </li>
           <li>
             <a href="#" className="item__link">
-              <img src={Logout} alt="" />
+              <img src="{Logout}" alt="" />
               <span>Sair</span>
             </a>
           </li>
