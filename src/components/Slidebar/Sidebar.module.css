@@ -4,7 +4,7 @@ aside {
   width: 20rem;
   border-radius: 8px;
   height: 60rem;
-  position: fixed;
+  position: absolute;
 }
 
 .imagem {

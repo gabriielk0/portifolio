@@ -1,0 +1,16 @@
+.container{
+    color: var(--branco);
+    text-align: center;
+    position: relative;
+}
+
+.links{
+    color: var(--branco);
+    text-decoration: none;
+    margin: 32px
+}
+
+.links:hover{
+    color: var(--verde-destaque);
+    text-decoration: underline;
+}

@@ -1,6 +1,7 @@
 
 import styles from './Sidebar.module.css'
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { LuLogOut } from "react-icons/lu";
 
 export default function Sidebar() {
   return (
@@ -37,8 +38,8 @@ export default function Sidebar() {
           </li>
           <li>
             <a href="#" className={styles.item__link}>
-              <img src="{Logout}" alt="" />
-              <span>Sair</span>
+            <LuLogOut />
+            <span>Sair</span>
             </a>
           </li>
         </ul>
