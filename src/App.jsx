@@ -1,15 +1,14 @@
-import './App.css'
+import './App.css';
+import Sidebar from './components/Sidebar';
 import Home from './pages/Home';
-import Navbar from './components/Navbar';
 
 function App() {
-
   return (
-    <>
-    <Navbar />
+    <div className="divisao">
+      <Sidebar />
       <Home />
-    </>
-  )
+    </div>
+  );
 }
 
-export default App
+export default App;
