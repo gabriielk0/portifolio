@@ -37,12 +37,6 @@ export default function Sidebar() {
               <span>Instagram</span>
             </a>
           </li>
-          <li>
-            <a href="#" className={styles.item__link}>
-            <LuLogOut />
-            <span>Sair</span>
-            </a>
-          </li>
         </ul>
       </nav>
     </aside>

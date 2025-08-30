@@ -9,103 +9,106 @@ import {
 } from 'react-icons/fa';
 import { IoLogoJavascript } from 'react-icons/io5';
 import { SiJupyter } from 'react-icons/si';
+import { AiOutlineGlobal } from 'react-icons/ai';
 import styles from './Home.module.css';
 
 export default function Home() {
   return (
     <main class={styles.body}>
-      <section class="mb-12">
+      <section>
         <h2 class={`${styles.titulo} ${styles.animate_fade_in}`}>
           🛠️ Tecnologias & Ferramentas
         </h2>
         <div class={styles.card_session}>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <FaHtml5 class={styles.imagem} />
+            <FaHtml5 class={`${styles.imagem} ${styles.icon_html}`} />
             <h3>HTML5</h3>
             <p>Avançado</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <FaCss3Alt class={styles.imagem} />
+            <FaCss3Alt class={`${styles.imagem} ${styles.icon_css}`} />
             <h3>CSS3</h3>
             <p>Avançado</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <IoLogoJavascript class={styles.imagem} />
+            <IoLogoJavascript class={`${styles.imagem} ${styles.icon_js}`} />
             <h3>JavaScript</h3>
             <p>Especialista</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <FaReact class={styles.imagem} />
+            <FaReact class={`${styles.imagem} ${styles.icon_react}`} />
             <h3>React</h3>
             <p>Avançado</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <FaPython class={styles.imagem} />
+            <FaPython class={`${styles.imagem} ${styles.icon_python}`} />
             <h3>Python</h3>
             <p>Intermediário</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <SiJupyter class={styles.imagem} />
+            <SiJupyter class={`${styles.imagem} ${styles.icon_jupyter}`} />
             <h3>Jupyter</h3>
             <p>Intermediário</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <FaPhp class={styles.imagem} />
+            <FaPhp class={`${styles.imagem} ${styles.icon_php}`} />
             <h3>PHP</h3>
             <p>Avançado</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
-            <FaLaravel class={styles.imagem} />
+            <FaLaravel class={`${styles.imagem} ${styles.icon_laravel}`} />
             <h3>Laravel</h3>
             <p>Avançado</p>
           </div>
         </div>
       </section>
 
-      <section class="mb-12">
+      <section>
         <h2 class={`${styles.titulo} ${styles.animate_fade_in}`}>
           🚀 Meus Projetos
         </h2>
         <div class={styles.project_session}>
           <div class={`${styles.project_card} ${styles.glass_effect}`}>
-            <div class="mb-4 rounded-lg overflow-hidden">
+            <div>
               <img
-                src="https://placehold.co/600x400"
+                src="https://i.imgur.com/jpgajvz.jpeg"
                 alt="Dashboard administrativo moderno com gráficos e métricas em tempo real para gestão de negócios"
-                class="w-full h-48 object-cover"
                 onerror="this.style.backgroundColor='#2d3748'"
               />
             </div>
-            <h3 class="text-xl font-semibold mb-2">Sistema de Gestão</h3>
-            <p class="text-sm opacity-90 mb-3">
-              Plataforma completa para gerenciamento de projetos e tarefas com
-              dashboard interativo.
+            <h3>Não Tenhais Medo</h3>
+            <p>
+                Um sistema para gerir as informações de encontros de jovens em Paroquias
             </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-blue-500/20 rounded text-xs">
-                React
+            <div class={styles.tech_tags}>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_php}`}>
+                PHP
               </span>
-              <span class="px-2 py-1 bg-green-500/20 rounded text-xs">
-                Node.js
+              <span class={`${styles.tech_tag} ${styles.tech_tag_laravel}`}>
+                Laravel
               </span>
-              <span class="px-2 py-1 bg-purple-500/20 rounded text-xs">
-                MongoDB
+              <span class={`${styles.tech_tag} ${styles.tech_tag_sqlite}`}>
+                SQLite
               </span>
+              
             </div>
-            <a
-              href="#"
-              class="text-blue-300 hover:text-blue-200 text-sm font-medium"
-            >
-              Ver projeto →
-            </a>
+            <div class={styles.project_link_session}>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <AiOutlineGlobal class={styles.project_icon} />
+                Vercel
+              </a>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <FaGithub class={styles.project_icon} />
+                Github
+              </a>
+            </div>
           </div>
 
           <div class={`${styles.project_card} ${styles.glass_effect}`}>
-            <div class="mb-4 rounded-lg overflow-hidden">
+            <div>
               <img
                 src="https://placehold.co/600x400"
                 alt="Aplicativo mobile de e-commerce com interface limpa e carrinho de compras intuitivo"
-                class="w-full h-48 object-cover"
                 onerror="this.style.backgroundColor='#2d3748'"
               />
             </div>
@@ -114,31 +117,37 @@ export default function Home() {
               Aplicativo de compras com carrinho, pagamentos e sistema de
               avaliações integrado.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-blue-400/20 rounded text-xs">
+            <div class={styles.tech_tags}>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_native}`}>
                 React Native
               </span>
-              <span class="px-2 py-1 bg-red-500/20 rounded text-xs">
+              <span class={`${styles.tech_tag} ${styles.tech_tag_firebase}`}>
                 Firebase
               </span>
-              <span class="px-2 py-1 bg-yellow-500/20 rounded text-xs">
+              <span class={`${styles.tech_tag} ${styles.tech_tag_stripe}`}>
                 Stripe
               </span>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_alura}`}>
+                Alura
+              </span>
             </div>
-            <a
-              href="#"
-              class="text-blue-300 hover:text-blue-200 text-sm font-medium"
-            >
-              Ver projeto →
-            </a>
+            <div class={styles.project_link_session}>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <AiOutlineGlobal class={styles.project_icon} />
+                Vercel
+              </a>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <FaGithub class={styles.project_icon} />
+                Github
+              </a>
+            </div>
           </div>
 
           <div class={`${styles.project_card} ${styles.glass_effect}`}>
-            <div class="mb-4 rounded-lg overflow-hidden">
+            <div>
               <img
                 src="https://placehold.co/600x400"
                 alt="Interface de blog moderno com layout responsivo e sistema de comentários em tempo real"
-                class="w-full h-48 object-cover"
                 onerror="this.style.backgroundColor='#2d3748'"
               />
             </div>
@@ -147,31 +156,34 @@ export default function Home() {
               Sistema de publicação de artigos com editor rich-text e
               comentários em tempo real.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-blue-600/20 rounded text-xs">
+            <div class={styles.tech_tags}>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_next}`}>
                 Next.js
               </span>
-              <span class="px-2 py-1 bg-gray-500/20 rounded text-xs">
+              <span class={`${styles.tech_tag} ${styles.tech_tag_postgres}`}>
                 PostgreSQL
               </span>
-              <span class="px-2 py-1 bg-green-600/20 rounded text-xs">
+              <span class={`${styles.tech_tag} ${styles.tech_tag_prisma}`}>
                 Prisma
               </span>
             </div>
-            <a
-              href="#"
-              class="text-blue-300 hover:text-blue-200 text-sm font-medium"
-            >
-              Ver projeto →
-            </a>
+            <div class={styles.project_link_session}>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <AiOutlineGlobal class={styles.project_icon} />
+                Vercel
+              </a>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <FaGithub class={styles.project_icon} />
+                Github
+              </a>
+            </div>
           </div>
 
           <div class={`${styles.project_card} ${styles.glass_effect}`}>
-            <div class="mb-4 rounded-lg overflow-hidden">
+            <div>
               <img
                 src="https://placehold.co/600x400"
                 alt="Dashboard analítico com visualizações de dados e métricas de performance para tomada de decisão"
-                class="w-full h-48 object-cover"
                 onerror="this.style.backgroundColor='#2d3748'"
               />
             </div>
@@ -180,23 +192,27 @@ export default function Home() {
               Ferramenta de análise de dados com gráficos interativos e
               relatórios personalizáveis.
             </p>
-            <div class="flex flex-wrap gap-2 mb-4">
-              <span class="px-2 py-1 bg-purple-600/20 rounded text-xs">
+            <div class={styles.tech_tags}>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_vue}`}>
                 Vue.js
               </span>
-              <span class="px-2 py-1 bg-orange-500/20 rounded text-xs">
+              <span class={`${styles.tech_tag} ${styles.tech_tag_d3}`}>
                 D3.js
               </span>
-              <span class="px-2 py-1 bg-teal-500/20 rounded text-xs">
+              <span class={`${styles.tech_tag} ${styles.tech_tag_express}`}>
                 Express
               </span>
             </div>
-            <a
-              href="#"
-              class="text-blue-300 hover:text-blue-200 text-sm font-medium"
-            >
-              Ver projeto →
-            </a>
+            <div class={styles.project_link_session}>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <AiOutlineGlobal class={styles.project_icon} />
+                Vercel
+              </a>
+              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+                <FaGithub class={styles.project_icon} />
+                Github
+              </a>
+            </div>
           </div>
         </div>
       </section>
