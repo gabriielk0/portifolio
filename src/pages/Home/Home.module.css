@@ -13,13 +13,13 @@ body {
   margin: 16px;
 }
 
-
 /* ===== ELEMENTOS BÁSICOS ===== */
 .imagem {
-  max-width: 90%;
-  font-size: 3rem;
-  width: 5rem;
+  max-width: 100%;
+  font-size: 2.5rem;
+  width: 4rem;
   height: auto;
+  flex-shrink: 0; /* Evita que o ícone diminua muito */
 }
 
 .titulo {
@@ -81,8 +81,11 @@ body {
   justify-content: center;
   text-align: center;
   padding: 0.5rem;
-  border-radius: 0.75rem;
+  border-radius: 0.5rem;
   transition: all 0.3s ease;
+  width: 100%; /* Ocupa toda a largura disponível */
+  min-height: 120px; /* Altura mínima para consistência */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
 }
 
 .tech_card h3 {
@@ -110,9 +113,11 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 1.5rem;
+  padding: 1rem;
   border-radius: 0.75rem;
   transition: all 0.3s ease;
+  width: 100%; /* Ocupa toda a largura disponível */
+  box-sizing: border-box; /* Inclui padding no cálculo da largura */
 }
 
 .project_card:hover {
@@ -139,14 +144,20 @@ body {
 /* ===== SESSÕES DE GRID ===== */
 .card_session {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr); /* Uma coluna por padrão */
+  gap: 0.75rem;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .project_session {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr); /* Uma coluna por padrão */
   gap: 1rem;
+  padding: 0 1rem;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 /* ===== EFEITOS VISUAIS ===== */
@@ -351,16 +362,107 @@ body {
 }
 
 /* ===== MEDIA QUERIES ===== */
-@media (min-width: 768px) {
-  body {
-    margin: 32px;
+/* Telas muito pequenas (até 400px) */
+@media (max-width: 399px) {
+  .card_session,
+  .project_session {
+    gap: 0.5rem;
+    padding: 0 0.5rem;
   }
+
+  .tech_card {
+    min-height: 90px;
+    padding: 0.25rem;
+  }
+
+  .project_card {
+    padding: 0.75rem;
+  }
+
+  .imagem {
+    font-size: 1.8rem;
+    width: 2.5rem;
+  }
+
+  .tech_card h3 {
+    font-size: 1rem;
+  }
+
+  .tech_card p {
+    font-size: 0.75rem;
+  }
+}
+
+/* Telas pequenas (400px - 600px) */
+@media (min-width: 400px) and (max-width: 599px) {
   .card_session {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 0 0.5rem;
+  }
+
+  .project_session {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0.75rem;
+    padding: 0 0.5rem;
+  }
+
+  .tech_card {
+    min-height: 100px;
+    padding: 0.25rem;
+  }
+
+  .imagem {
+    font-size: 2rem;
+    width: 3rem;
+  }
+}
+
+/* Tablets (600px - 768px) */
+@media (min-width: 600px) and (max-width: 767px) {
+  .card_session {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.75rem;
+    padding: 0 1rem;
   }
 
   .project_session {
     grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0 1rem;
+  }
+
+  .tech_card {
+    min-height: 110px;
+  }
+}
+
+/* Tablets grandes (768px+) */
+@media (min-width: 768px) {
+  body {
+    margin: 32px;
+  }
+
+  .card_session {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .project_session {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 0;
+  }
+
+  .tech_card {
+    min-height: 120px;
+    padding: 0.5rem;
+  }
+
+  .imagem {
+    font-size: 2.5rem;
+    width: 4rem;
   }
 }
 
