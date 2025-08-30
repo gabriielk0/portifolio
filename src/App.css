@@ -54,7 +54,14 @@
 .divisao {
   display: flex;
   height: 100vh;
-  margin-left: 20rem;
+  margin-left: 0; /* Remove margem por padrão para telas pequenas */
+}
+
+/* Adiciona margem apenas quando a sidebar está visível (tablets e maiores) */
+@media (min-width: 768px) {
+  .divisao {
+    margin-left: 20rem;
+  }
 }
 
 .sidebar {

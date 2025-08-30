@@ -15,6 +15,10 @@ import styles from './Home.module.css';
 export default function Home() {
   return (
     <main class={styles.body}>
+      <div>
+        <h1 className={styles.titulo_pagina}>Meu Portifolio</h1>
+      </div>
+
       <section>
         <h2 class={`${styles.titulo} ${styles.animate_fade_in}`}>
           🛠️ Tecnologias & Ferramentas
@@ -33,7 +37,7 @@ export default function Home() {
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
             <IoLogoJavascript class={`${styles.imagem} ${styles.icon_js}`} />
             <h3>JavaScript</h3>
-            <p>Especialista</p>
+            <p>Avançado</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaReact class={`${styles.imagem} ${styles.icon_react}`} />
@@ -43,22 +47,22 @@ export default function Home() {
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaPython class={`${styles.imagem} ${styles.icon_python}`} />
             <h3>Python</h3>
-            <p>Intermediário</p>
+            <p>Iniciante</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
             <SiJupyter class={`${styles.imagem} ${styles.icon_jupyter}`} />
             <h3>Jupyter</h3>
-            <p>Intermediário</p>
+            <p>Iniciante</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaPhp class={`${styles.imagem} ${styles.icon_php}`} />
             <h3>PHP</h3>
-            <p>Avançado</p>
+            <p>Intermediário</p>
           </div>
           <div class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaLaravel class={`${styles.imagem} ${styles.icon_laravel}`} />
             <h3>Laravel</h3>
-            <p>Avançado</p>
+            <p>Intermediário</p>
           </div>
         </div>
       </section>
@@ -78,7 +82,8 @@ export default function Home() {
             </div>
             <h3>Não Tenhais Medo</h3>
             <p>
-                Um sistema para gerir as informações de encontros de jovens em Paroquias
+              Um sistema para gerir as informações de encontros de jovens em
+              Paroquias
             </p>
             <div class={styles.tech_tags}>
               <span class={`${styles.tech_tag} ${styles.tech_tag_php}`}>
@@ -90,14 +95,19 @@ export default function Home() {
               <span class={`${styles.tech_tag} ${styles.tech_tag_sqlite}`}>
                 SQLite
               </span>
-              
             </div>
             <div class={styles.project_link_session}>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
               </a>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <FaGithub class={styles.project_icon} />
                 Github
               </a>
@@ -132,11 +142,17 @@ export default function Home() {
               </span>
             </div>
             <div class={styles.project_link_session}>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
               </a>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <FaGithub class={styles.project_icon} />
                 Github
               </a>
@@ -168,11 +184,17 @@ export default function Home() {
               </span>
             </div>
             <div class={styles.project_link_session}>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
               </a>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <FaGithub class={styles.project_icon} />
                 Github
               </a>
@@ -204,11 +226,17 @@ export default function Home() {
               </span>
             </div>
             <div class={styles.project_link_session}>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
               </a>
-              <a href="#" class={`${styles.project_link} ${styles.glass_effect}`}>
+              <a
+                href="#"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+              >
                 <FaGithub class={styles.project_icon} />
                 Github
               </a>
@@ -225,11 +253,14 @@ export default function Home() {
           <div class={styles.jornada_item}>
             <div class={styles.jornada_dot}></div>
             <div class={styles.jornada_content}>
-              <h3 class={styles.jornada_title}>Início da Jornada (2018)</h3>
+              <h3 class={styles.jornada_title}>Início da Jornada (2019)</h3>
               <p class={styles.jornada_description}>
-                Meu primeiro contato com programação foi através de cursos
-                online de HTML e CSS. A paixão por criar interfaces e ver o
-                código ganhar vida me motivou a seguir nesta área.
+                Meu primeiro contato com a programação foi por meio de cursos
+                online de HTML e CSS. A possibilidade de transformar ideias em
+                interfaces visuais e ver o código ganhar vida despertou em mim
+                uma paixão imediata. Além disso, enxerguei na programação a
+                chance de ter liberdade para trabalhar de qualquer lugar, o que
+                reforçou ainda mais meu desejo de seguir nesse caminho.
               </p>
             </div>
           </div>
@@ -237,11 +268,15 @@ export default function Home() {
           <div class={styles.jornada_item}>
             <div class={styles.jornada_dot}></div>
             <div class={styles.jornada_content}>
-              <h3 class={styles.jornada_title}>Primeiro Projeto Real (2019)</h3>
+              <h3 class={styles.jornada_title}>Interesse na Carreira (2020)</h3>
               <p class={styles.jornada_description}>
-                Desenvolvi meu primeiro site freelance para um pequeno negócio
-                local. A experiência de trabalhar com clientes reais me ensinou
-                muito sobre prazos e expectativas.
+                Motivado a transformar esse interesse em profissão, participei
+                do PAS (Programa de Avaliação Seriada), processo seletivo da
+                UnB, e conquistei uma vaga em Engenharia da Computação. No
+                entanto, por questões de localização e disponibilidade, não
+                consegui dar continuidade a esse curso e precisei abrir mão da
+                oportunidade. Mesmo assim, minha vontade de ingressar na área
+                não diminuiu.
               </p>
             </div>
           </div>
@@ -249,11 +284,16 @@ export default function Home() {
           <div class={styles.jornada_item}>
             <div class={styles.jornada_dot}></div>
             <div class={styles.jornada_content}>
-              <h3 class={styles.jornada_title}>Especialização (2020-2021)</h3>
+              <h3 class={styles.jornada_title}>
+                Inicio da especialização (2022)
+              </h3>
               <p class={styles.jornada_description}>
-                Me aprofundei em JavaScript, React e Node.js. Participei de
-                bootcamps intensivos e construí projetos complexos que
-                solidificaram meu conhecimento em desenvolvimento full-stack.
+                Sem desistir do meu objetivo, iniciei minha graduação em Ciência
+                da Computação pela Cruzeiro do Sul Virtual. O formato de ensino
+                a distância me permitiu equilibrar trabalho e estudos,
+                garantindo que eu pudesse me dedicar à área sem comprometer
+                minha saúde e desempenho. Foi nesse período que comecei a
+                desenvolver meus primeiros projetos reais.
               </p>
             </div>
           </div>
@@ -261,12 +301,16 @@ export default function Home() {
           <div class={styles.jornada_item}>
             <div class={styles.jornada_dot}></div>
             <div class={styles.jornada_content}>
-              <h3 class={styles.jornada_title}>Atualmente (2022-2023)</h3>
+              <h3 class={styles.jornada_title}>
+                Primeira Experiência Profissional, Estágio(2025)
+              </h3>
               <p class={styles.jornada_description}>
-                Trabalhando como desenvolvedor freelancer, focando em criar
-                soluções escaláveis e de alta qualidade. Continuo aprendendo
-                novas tecnologias e melhorando minhas habilidades
-                constantemente.
+                Durante três anos, atuei como auxiliar administrativo em uma
+                construtora. Nesse tempo, participei de atividades na igreja,
+                onde conheci pessoas da área de tecnologia que me incentivaram a
+                seguir em frente. Esse networking abriu portas e, finalmente,
+                conquistei minha primeira vaga como estagiário no Serpro, onde
+                iniciei minha trajetória prática no desenvolvimento de sistemas.
               </p>
             </div>
           </div>
@@ -276,9 +320,12 @@ export default function Home() {
             <div class={styles.jornada_content}>
               <h3 class={styles.jornada_title}>Futuro</h3>
               <p class={styles.jornada_description}>
-                Planejo me especializar em arquitetura de software e machine
-                learning, sempre buscando criar impacto positivo através da
-                tecnologia.
+                Atualmente, me preparo para concluir a graduação em Ciência da
+                Computação no final de 2025. Minha meta é seguir crescendo como
+                desenvolvedor de sistemas, participando de projetos que me
+                desafiem e expandam meu conhecimento. Graças às conexões que
+                construí, já iniciei iniciativas em equipe, o que me trouxe
+                ainda mais experiência e motivação para o futuro.
               </p>
             </div>
           </div>
