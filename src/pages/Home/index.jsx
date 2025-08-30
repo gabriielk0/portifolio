@@ -24,46 +24,69 @@ export default function Home() {
           🛠️ Tecnologias & Ferramentas
         </h2>
         <div class={styles.card_session}>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          <a href="https://cursos.alura.com.br/degree/certificate/a06d1d2c-8cb4-4081-9f88-aeab4bb173ab?lang=pt_BR"
+            target='_blank' 
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaHtml5 class={`${styles.imagem} ${styles.icon_html}`} />
             <h3>HTML5</h3>
             <p>Avançado</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='https://cursos.alura.com.br/degree/certificate/a06d1d2c-8cb4-4081-9f88-aeab4bb173ab?lang=pt_BR'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaCss3Alt class={`${styles.imagem} ${styles.icon_css}`} />
             <h3>CSS3</h3>
             <p>Avançado</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='https://cursos.alura.com.br/degree/certificate/b5250a44-d755-472a-906d-5f02b6a69ccc?lang=pt_BR'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <IoLogoJavascript class={`${styles.imagem} ${styles.icon_js}`} />
             <h3>JavaScript</h3>
             <p>Avançado</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='https://cursos.alura.com.br/degree/certificate/4914b96b-beac-4461-a7bb-550253d755c8?lang=pt_BR'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaReact class={`${styles.imagem} ${styles.icon_react}`} />
             <h3>React</h3>
             <p>Avançado</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='#'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaPython class={`${styles.imagem} ${styles.icon_python}`} />
             <h3>Python</h3>
             <p>Iniciante</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='#'
+            target='_blank' 
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <SiJupyter class={`${styles.imagem} ${styles.icon_jupyter}`} />
             <h3>Jupyter</h3>
             <p>Iniciante</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='https://www.dio.me/certificate/OVGKY8H3/share'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
+            <FaGithub class={`${styles.imagem} ${styles.icon_github}`} />
+            <h3>GitHub</h3>
+            <p>Intermediário</p>
+          </a>
+          <a href='#'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaPhp class={`${styles.imagem} ${styles.icon_php}`} />
             <h3>PHP</h3>
             <p>Intermediário</p>
-          </div>
-          <div class={`${styles.glass_effect} ${styles.tech_card}`}>
+          </a>
+          <a href='#'
+            target='_blank'
+            class={`${styles.glass_effect} ${styles.tech_card}`}>
             <FaLaravel class={`${styles.imagem} ${styles.icon_laravel}`} />
             <h3>Laravel</h3>
             <p>Intermediário</p>
-          </div>
+          </a>
         </div>
       </section>
 
@@ -100,13 +123,15 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
               </a>
               <a
-                href="#"
+                href="https://github.com/n0va1s/pnsl-ntm.git"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <FaGithub class={styles.project_icon} />
                 Github
@@ -145,6 +170,7 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
@@ -152,6 +178,7 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <FaGithub class={styles.project_icon} />
                 Github
@@ -187,6 +214,7 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
@@ -194,6 +222,7 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <FaGithub class={styles.project_icon} />
                 Github
@@ -229,6 +258,7 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <AiOutlineGlobal class={styles.project_icon} />
                 Vercel
@@ -236,6 +266,7 @@ export default function Home() {
               <a
                 href="#"
                 class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
               >
                 <FaGithub class={styles.project_icon} />
                 Github
