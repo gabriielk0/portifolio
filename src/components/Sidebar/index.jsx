@@ -41,8 +41,9 @@ export default function Sidebar() {
         </p>
         <hr />
         <nav>
+          <h3 className={styles.textoPrincipal}>Redes Sociais</h3>
           <ul className={styles.lista_sidebar}>
-            <h3 className={styles.textoPrincipal}>Redes Sociais</h3>
+            
 
             <li>
               <a href="#" className={styles.item__link} onClick={toggleSidebar}>

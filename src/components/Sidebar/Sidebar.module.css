@@ -4,7 +4,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 .hamburger {
@@ -58,7 +58,7 @@ aside {
   left: -100vw;
   top: 0;
   bottom: 0;
-  overflow-y: auto;
+  overflow-y: visible;
   z-index: 1000;
   transition: left 0.3s ease;
 }
@@ -67,29 +67,10 @@ aside {
   left: 0;
 }
 
-@media (min-width: 768px) {
-  .hamburger {
-    display: none;
-  }
 
-  .overlay {
-    display: none;
-  }
 
-  aside {
-    width: 20rem;
-    padding: 2.5em 1em;
-    height: 100%;
-    min-height: 100%;
-    bottom: 0;
-    left: 0;
-    transition: none;
-  }
 
-  .aside_open {
-    left: 0;
-  }
-}
+
 
 .imagem {
   max-width: 90%;
@@ -116,12 +97,12 @@ aside {
   margin-bottom: 1.5rem;
 }
 
-.lista-sidebar {
+.lista_sidebar {
   display: flex;
   flex-direction: column;
-  gap: 2.5em;
+  gap: 0.5em;
   list-style-type: none;
-  margin-top: 5em;
+  margin-top: 1em;
 }
 
 ul {
@@ -157,4 +138,57 @@ ul {
   padding: 0.75em 1em;
   border-radius: 8px;
   text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+
+  .overlay {
+    display: none;
+  }
+
+  aside {
+    width: 20rem;
+    padding: 2.5em 1em;
+    height: 100%;
+    min-height: 100%;
+    bottom: 0;
+    left: 0;
+    transition: none;
+  }
+
+  .aside_open {
+    left: 0;
+  }
+
+  
+}
+
+@media (min-width: 1536px) {
+
+  .lista_sidebar{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+
+  .lista_sidebar li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+  gap: 8px;
+  list-style-type: none;
+
+  }
+
+  .lista_sidebar li:first-child a{
+    border-left: none;
+    padding-left: 0;
+  }
+
+  
+ 
 }
