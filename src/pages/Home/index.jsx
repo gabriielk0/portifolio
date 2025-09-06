@@ -23,6 +23,7 @@ export default function Home() {
         <h2 class={`${styles.titulo} ${styles.animate_fade_in}`}>
           🛠️ Tecnologias & Ferramentas
         </h2>
+        
         <div class={styles.card_session}>
           <a href="https://cursos.alura.com.br/degree/certificate/a06d1d2c-8cb4-4081-9f88-aeab4bb173ab?lang=pt_BR"
             target='_blank' 
@@ -120,14 +121,7 @@ export default function Home() {
               </span>
             </div>
             <div class={styles.project_link_session}>
-              <a
-                href="#"
-                class={`${styles.project_link} ${styles.glass_effect}`}
-                target="_blank"
-              >
-                <AiOutlineGlobal class={styles.project_icon} />
-                Vercel
-              </a>
+              
               <a
                 href="https://github.com/n0va1s/pnsl-ntm.git"
                 class={`${styles.project_link} ${styles.glass_effect}`}
@@ -142,33 +136,30 @@ export default function Home() {
           <div class={`${styles.project_card} ${styles.glass_effect}`}>
             <div>
               <img
-                src="https://placehold.co/600x400"
+                src="https://i.imgur.com/zcIpgOf.png"
                 alt="Aplicativo mobile de e-commerce com interface limpa e carrinho de compras intuitivo"
                 onerror="this.style.backgroundColor='#2d3748'"
               />
             </div>
-            <h3 class="text-xl font-semibold mb-2">E-commerce Mobile</h3>
+            <h3 class="text-xl font-semibold mb-2">Code Connect</h3>
             <p class="text-sm opacity-90 mb-3">
               Aplicativo de compras com carrinho, pagamentos e sistema de
               avaliações integrado.
             </p>
             <div class={styles.tech_tags}>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_native}`}>
-                React Native
-              </span>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_firebase}`}>
-                Firebase
-              </span>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_stripe}`}>
-                Stripe
-              </span>
               <span class={`${styles.tech_tag} ${styles.tech_tag_alura}`}>
                 Alura
+              </span>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_react}`}>
+                React
+              </span>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_js}`}>
+                Javascript
               </span>
             </div>
             <div class={styles.project_link_session}>
               <a
-                href="#"
+                href="https://codeconnect-feed-six.vercel.app/"
                 class={`${styles.project_link} ${styles.glass_effect}`}
                 target="_blank"
               >
@@ -176,7 +167,50 @@ export default function Home() {
                 Vercel
               </a>
               <a
-                href="#"
+                href="https://github.com/gabriielk0/codeconnect-vite"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
+              >
+                <FaGithub class={styles.project_icon} />
+                Github
+              </a>
+            </div>
+          </div>
+          <div class={`${styles.project_card} ${styles.glass_effect}`}>
+            <div>
+              <img
+                src="https://i.imgur.com/0JgQpsw.png"
+                alt="Aplicativo mobile de e-commerce com interface limpa e carrinho de compras intuitivo"
+                onerror="this.style.backgroundColor='#2d3748'"
+              />
+            </div>
+            <h3 class="text-xl font-semibold mb-2">Space App</h3>
+            <p class="text-sm opacity-90 mb-3">
+              Aplicativo de compras com carrinho, pagamentos e sistema de
+              avaliações integrado.
+            </p>
+            <div class={styles.tech_tags}>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_alura}`}>
+                Alura
+              </span>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_react}`}>
+                React
+              </span>
+              <span class={`${styles.tech_tag} ${styles.tech_tag_js}`}>
+                Javascript
+              </span>
+            </div>
+            <div class={styles.project_link_session}>
+              <a
+                href="https://space-app-kappa-blond.vercel.app/"
+                class={`${styles.project_link} ${styles.glass_effect}`}
+                target="_blank"
+              >
+                <AiOutlineGlobal class={styles.project_icon} />
+                Vercel
+              </a>
+              <a
+                href="https://github.com/gabriielk0/space-app"
                 class={`${styles.project_link} ${styles.glass_effect}`}
                 target="_blank"
               >
@@ -189,30 +223,30 @@ export default function Home() {
           <div class={`${styles.project_card} ${styles.glass_effect}`}>
             <div>
               <img
-                src="https://placehold.co/600x400"
+                src="https://i.imgur.com/BTqaW4O.png"
                 alt="Interface de blog moderno com layout responsivo e sistema de comentários em tempo real"
                 onerror="this.style.backgroundColor='#2d3748'"
               />
             </div>
-            <h3 class="text-xl font-semibold mb-2">Plataforma de Blog</h3>
+            <h3 class="text-xl font-semibold mb-2">Fokus</h3>
             <p class="text-sm opacity-90 mb-3">
               Sistema de publicação de artigos com editor rich-text e
               comentários em tempo real.
             </p>
             <div class={styles.tech_tags}>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_next}`}>
-                Next.js
+              <span class={`${styles.tech_tag} ${styles.tech_tag_alura}`}>
+                Alura
               </span>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_postgres}`}>
-                PostgreSQL
+              <span class={`${styles.tech_tag} ${styles.tech_tag_react}`}>
+                React
               </span>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_prisma}`}>
-                Prisma
+              <span class={`${styles.tech_tag} ${styles.tech_tag_js}`}>
+                Javascript
               </span>
             </div>
             <div class={styles.project_link_session}>
               <a
-                href="#"
+                href="https://fokus-chi-lac.vercel.app/"
                 class={`${styles.project_link} ${styles.glass_effect}`}
                 target="_blank"
               >
@@ -220,7 +254,7 @@ export default function Home() {
                 Vercel
               </a>
               <a
-                href="#"
+                href="https://github.com/gabriielk0/fokus"
                 class={`${styles.project_link} ${styles.glass_effect}`}
                 target="_blank"
               >
@@ -230,49 +264,6 @@ export default function Home() {
             </div>
           </div>
 
-          <div class={`${styles.project_card} ${styles.glass_effect}`}>
-            <div>
-              <img
-                src="https://placehold.co/600x400"
-                alt="Dashboard analítico com visualizações de dados e métricas de performance para tomada de decisão"
-                onerror="this.style.backgroundColor='#2d3748'"
-              />
-            </div>
-            <h3 class="text-xl font-semibold mb-2">Analytics Dashboard</h3>
-            <p class="text-sm opacity-90 mb-3">
-              Ferramenta de análise de dados com gráficos interativos e
-              relatórios personalizáveis.
-            </p>
-            <div class={styles.tech_tags}>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_vue}`}>
-                Vue.js
-              </span>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_d3}`}>
-                D3.js
-              </span>
-              <span class={`${styles.tech_tag} ${styles.tech_tag_express}`}>
-                Express
-              </span>
-            </div>
-            <div class={styles.project_link_session}>
-              <a
-                href="#"
-                class={`${styles.project_link} ${styles.glass_effect}`}
-                target="_blank"
-              >
-                <AiOutlineGlobal class={styles.project_icon} />
-                Vercel
-              </a>
-              <a
-                href="#"
-                class={`${styles.project_link} ${styles.glass_effect}`}
-                target="_blank"
-              >
-                <FaGithub class={styles.project_icon} />
-                Github
-              </a>
-            </div>
-          </div>
         </div>
       </section>
 
