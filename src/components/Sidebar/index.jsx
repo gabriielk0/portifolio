@@ -18,7 +18,7 @@ export default function Sidebar() {
             alt="Logo do CodeConnect"
             className={styles.imagem}
             />
-          <div>
+          <div className={styles.info}>
             <h1 className={styles.textoPrincipal}>Gabriel de Carvalho Oliveira</h1>
             <p className={styles.textoSecundario}>
               Olá! Sou Gabriel, estudante de Ciências da Computação e estou no ulimo

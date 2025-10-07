@@ -20,6 +20,12 @@ aside {
   right: 0;
   z-index: 1000;
   order: -1;
+  margin-right: 300;
+}
+
+.info {
+  margin-top: 1.5rem;
+  margin-right: 10vw;
 }
 
 .titulo_pagina{
@@ -50,7 +56,7 @@ aside {
 }
 
 .imagem {
-  max-width: 50%;
+  max-width: 35vw;
   border-radius: 50%;
   border: 3px solid var(--verde-destaque);
   margin: auto;
@@ -140,6 +146,10 @@ ul {
     transition: none;
     order: -1;
     position: fixed;
+  }
+
+  .info {
+  margin-right: 0;
   }
 
   .perfil {
