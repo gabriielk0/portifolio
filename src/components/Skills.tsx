@@ -26,52 +26,72 @@ import {
   Cpu,
   Container,
 } from 'lucide-react';
-import type { LucideIcon } from 'lucide-react';
+import type { IconType } from 'react-icons';
+import {
+  SiJavascript,
+  SiTypescript,
+  SiPython,
+  SiPostgresql,
+  SiMongodb,
+  SiDocker,
+  SiVercel,
+  SiFigma,
+  SiReact,
+  SiNextdotjs,
+  SiTailwindcss,
+  SiNodedotjs,
+  SiGit,
+  SiNestjs,
+  SiMysql,
+  SiSqlite,
+} from "react-icons/si";
+import { FaJava, FaPhp, FaAws, FaDatabase } from "react-icons/fa";
 
 type SkillIcon = {
-  icon: LucideIcon;
+  icon: IconType;
   color: string;
 };
 
 const skillIcons: Record<string, SkillIcon> = {
-  JavaScript: { icon: FileJson, color: 'text-yellow-500' },
-  TypeScript: { icon: FileCode, color: 'text-blue-500' },
-  Python: { icon: Terminal, color: 'text-green-500' },
-  Java: { icon: Cpu, color: 'text-orange-500' },
-  SQL: { icon: Database, color: 'text-cyan-500' },
-  React: { icon: Braces, color: 'text-cyan-400' },
-  'Next.js': { icon: Globe, color: 'text-foreground' },
-  'Vue.js': { icon: Layers, color: 'text-emerald-500' },
-  'Tailwind CSS': { icon: Palette, color: 'text-teal-400' },
+  JavaScript: { icon: SiJavascript, color: 'text-yellow-500' },
+  TypeScript: { icon: SiTypescript, color: 'text-blue-500' },
+  Python: { icon: SiPython, color: 'text-blue-500' },
+  Java: { icon: FaJava, color: 'text-orange-500' },
+  SQL: { icon: FaDatabase, color: 'text-cyan-500' },
+  MySQL: { icon: SiMysql, color: 'text-cyan-500' },
+  React: { icon: SiReact, color: 'text-cyan-400' },
+  'Next.js': { icon: SiNextdotjs, color: 'text-foreground' },
+  'Tailwind CSS': { icon: SiTailwindcss, color: 'text-teal-400' },
   'HTML/CSS': { icon: Code2, color: 'text-orange-400' },
-  'Node.js': { icon: Server, color: 'text-green-600' },
-  Express: { icon: Box, color: 'text-foreground' },
-  NestJS: { icon: Hash, color: 'text-red-500' },
-  PostgreSQL: { icon: Database, color: 'text-blue-400' },
-  MongoDB: { icon: Database, color: 'text-green-500' },
-  Git: { icon: GitBranch, color: 'text-orange-500' },
-  Docker: { icon: Container, color: 'text-blue-500' },
-  AWS: { icon: Cloud, color: 'text-orange-400' },
-  Vercel: { icon: Globe, color: 'text-foreground' },
-  Figma: { icon: Figma, color: 'text-purple-500' },
+  'Node.js': { icon: SiNodedotjs, color: 'text-green-600' },
+  NestJS: { icon: SiNestjs, color: 'text-red-500' },
+  PostgreSQL: { icon: SiPostgresql, color: "text-blue-400" },
+  MongoDB: { icon: SiMongodb, color: 'text-green-500' },
+  Git: { icon: SiGit, color: 'text-orange-500' },
+  Docker: { icon: SiDocker, color: 'text-blue-500' },
+  AWS: { icon: FaAws, color: 'text-orange-400' },
+  Vercel: { icon: SiVercel, color: 'text-foreground' },
+  Figma: { icon: SiFigma, color: "text-purple-500" },
+  PHP: { icon: FaPhp, color: 'text-green-500' },
+  SQLite: { icon: SiSqlite, color: 'text-blue-300' },
 };
 
 const skillCategories = [
   {
-    title: 'Linguagens',
-    skills: ['JavaScript', 'TypeScript', 'Python', 'Java', 'SQL'],
-  },
-  {
     title: 'Frontend',
-    skills: ['React', 'Next.js', 'Vue.js', 'Tailwind CSS', 'HTML/CSS'],
+    skills: ['HTML/CSS', 'Next.js', 'React', 'Tailwind CSS', 'JavaScript', 'TypeScript'],
   },
   {
     title: 'Backend',
-    skills: ['Node.js', 'Express', 'NestJS', 'PostgreSQL', 'MongoDB'],
+    skills: ['Node.js', 'NestJS', 'Java', 'PHP', 'Python'],
+  },
+  {
+    title: 'Api & Dados',
+    skills: [ 'MySQL', 'SQL', 'SQLite'],
   },
   {
     title: 'Ferramentas',
-    skills: ['Git', 'Docker', 'AWS', 'Vercel', 'Figma'],
+    skills: ['Git', 'Docker', 'Vercel', 'Figma'],
   },
 ];
 
