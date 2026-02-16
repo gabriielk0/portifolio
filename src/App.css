@@ -1,8 +1,8 @@
 #root {
-  max-width: 90%;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
 }
 
 .logo {
@@ -39,37 +39,4 @@
 
 .read-the-docs {
   color: #888;
-}
-
-.container {
-  display: flex;
-  gap: 16px;
-}
-
-.container div {
-  flex-grow: 2;
-  margin-top: 16px;
-}
-
-.divisao {
-  display: flex;
-  height: 100vh;
-  margin-left: 0; /* Remove margem por padrão para telas pequenas */
-}
-
-/* Adiciona margem apenas quando a sidebar está visível (tablets e maiores) */
-@media (min-width: 768px) {
-  .divisao {
-    margin-left: 20rem;
-  }
-}
-
-.sidebar {
-  width: 20rem;
-}
-
-.divisao_route {
-  flex: 1;
-  padding: 2rem;
-  background-color: var(--grafite);
 }
