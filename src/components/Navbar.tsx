@@ -33,11 +33,8 @@ export function Navbar() {
             : 'py-6'
         }`}
       >
-        <div className="max-w-6xl mx-auto px-6 flex items-center justify-between">
-          {/* Logo */}
-          <a href="#" className="text-xl font-bold">
-            <span className="gradient-text">GC</span>
-          </a>
+        <div className="max-w-6xl mx-auto px-6 flex items-center justify-center">
+          
 
           {/* Desktop Navigation */}
           <ul className="hidden md:flex items-center gap-8">
