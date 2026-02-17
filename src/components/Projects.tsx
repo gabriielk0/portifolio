@@ -1,3 +1,4 @@
+import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -7,47 +8,143 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from '@/components/ui/tooltip';
+import {
+  SiPhp,
+  SiLaravel,
+  SiSqlite,
+  SiNextdotjs,
+  SiTypescript,
+  SiPrisma,
+  SiTailwindcss,
+  SiReact,
+  SiExpress,
+  SiMongodb,
+  SiSupabase,
+  SiVercel,
+  SiD3Dotjs,
+  SiJavascript,
+} from 'react-icons/si';
+
+const AluraIcon = () => {
+  return (
+    <div
+      className="w-6 h-6 flex items-center justify-center rounded-md
+      bg-muted text-muted-foreground
+      transition-colors duration-150 ease-in-out
+      group-hover:bg-blue-900 
+      group-hover:text-white"
+    >
+      <span className="font-lato font-light text-white text-sm leading-none">
+        a
+      </span>
+    </div>
+  );
+};
+
+const techIcons: Record<string, { icon: JSX.Element; className: string }> = {
+  PHP: {
+    icon: <SiPhp />,
+    className:
+      'text-muted-foreground group-hover:text-indigo-400 transition-colors',
+  },
+  JavaScript: {
+    icon: <SiJavascript />,
+    className:
+      'text-muted-foreground group-hover:text-yellow-400 transition-colors',
+  },
+  Laravel: {
+    icon: <SiLaravel />,
+    className:
+      'text-muted-foreground group-hover:text-red-500 transition-colors',
+  },
+  SQLite: {
+    icon: <SiSqlite />,
+    className:
+      'text-muted-foreground group-hover:text-blue-700 transition-colors',
+  },
+  'Next.js': {
+    icon: <SiNextdotjs />,
+    className:
+      'text-muted-foreground group-hover:text-foreground transition-colors',
+  },
+  TypeScript: {
+    icon: <SiTypescript />,
+    className:
+      'text-muted-foreground group-hover:text-blue-500 transition-colors',
+  },
+  Prisma: {
+    icon: <SiPrisma />,
+    className:
+      'text-muted-foreground group-hover:text-slate-500 transition-colors',
+  },
+  Tailwind: {
+    icon: <SiTailwindcss />,
+    className:
+      'text-muted-foreground group-hover:text-cyan-500 transition-colors',
+  },
+  React: {
+    icon: <SiReact />,
+    className:
+      'text-muted-foreground group-hover:text-cyan-400 transition-colors',
+  },
+  'D3.js': {
+    icon: <SiD3Dotjs />,
+    className:
+      'text-muted-foreground group-hover:text-orange-500 transition-colors',
+  },
+  Express: {
+    icon: <SiExpress />,
+    className:
+      'text-muted-foreground group-hover:text-foreground transition-colors',
+  },
+  MongoDB: {
+    icon: <SiMongodb />,
+    className:
+      'text-muted-foreground group-hover:text-green-600 transition-colors',
+  },
+  Supabase: {
+    icon: <SiSupabase />,
+    className:
+      'text-emerald-400 group-hover:text-emerald-500 transition-colors',
+  },
+  Vercel: {
+    icon: <SiVercel />,
+    className:
+      'text-muted-foreground group-hover:text-foreground transition-colors',
+  },
+  Alura: {
+    icon: <AluraIcon />,
+    className: 'text-muted-foreground',
+  },
+};
 
 const projects = [
   {
-    title: 'E-commerce Platform',
+    title: 'Não Tenhais Medo',
     description:
-      'Plataforma completa de e-commerce com carrinho, checkout e painel administrativo. Desenvolvido com React, Node.js e PostgreSQL.',
-    technologies: ['React', 'Node.js', 'PostgreSQL', 'Stripe'],
-    githubUrl: 'https://github.com/gabrielcarvalho/ecommerce',
-    liveUrl: 'https://ecommerce-demo.vercel.app',
-    image:
-      'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=500&fit=crop',
+      'Um sistema para gerir as informações de encontros de jovens em Paroquias',
+    technologies: ['PHP', 'Laravel', 'SQLite'],
+    githubUrl: 'https://github.com/n0va1s/pnsl-ntm.git',
+    liveUrl: 'https://pnsl.fe.digital',
+    image: 'https://i.imgur.com/IsneH1v.jpeg',
   },
   {
-    title: 'Task Manager',
+    title: 'Space App',
     description:
-      'Aplicação de gerenciamento de tarefas com autenticação, colaboração em equipe e notificações em tempo real.',
-    technologies: ['Next.js', 'TypeScript', 'Prisma', 'Tailwind'],
-    githubUrl: 'https://github.com/gabrielcarvalho/task-manager',
-    liveUrl: 'https://task-manager-demo.vercel.app',
-    image:
-      'https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=800&h=500&fit=crop',
+      'Galeria de imagens do espaço que reúne fotos de estrelas, galáxias, luas e nebulosas organizadas para visualização.',
+    technologies: ['Alura', 'React', 'JavaScript'],
+    githubUrl: 'https://github.com/gabriielk0/space-app',
+    liveUrl: 'https://space-app-kappa-blond.vercel.app/',
+    image: 'https://i.imgur.com/HMOHXoP.png',
   },
   {
-    title: 'Dashboard Analytics',
+    title: 'Fokus',
     description:
-      'Dashboard interativo para visualização de dados com gráficos dinâmicos e exportação de relatórios.',
-    technologies: ['React', 'D3.js', 'Express', 'MongoDB'],
-    githubUrl: 'https://github.com/gabrielcarvalho/dashboard',
-    liveUrl: 'https://dashboard-demo.vercel.app',
-    image:
-      'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop',
-  },
-  {
-    title: 'Blog Platform',
-    description:
-      'Sistema de blog com editor rich text, SEO otimizado e sistema de comentários integrado.',
-    technologies: ['Next.js', 'MDX', 'Supabase', 'Vercel'],
-    githubUrl: 'https://github.com/gabrielcarvalho/blog',
-    liveUrl: 'https://blog-demo.vercel.app',
-    image:
-      'https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=800&h=500&fit=crop',
+      'Aplicação inspirada na técnica Pomodoro que auxilia na organização do tempo por meio de ciclos de 25 minutos de foco intercalados com pausas estratégicas, promovendo maior produtividade e concentração',
+    technologies: ['Alura', 'React', 'JavaScript'],
+    githubUrl: 'https://github.com/gabriielk0/fokus',
+    liveUrl: 'https://fokus-chi-lac.vercel.app/',
+    image: 'https://i.imgur.com/MZcBuCN.png',
   },
 ];
 
@@ -97,19 +194,24 @@ export function Projects() {
               <motion.div
                 key={project.title}
                 variants={cardVariants}
-                className="glass-card rounded-xl overflow-hidden hover-lift group"
+                className="glass-card rounded-xl hover-lift group"
               >
                 {/* Project Image */}
-                <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={project.image}
-                    alt={`Screenshot do projeto ${project.title}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/20 to-transparent" />
+                <div className="relative h-48">
+                  {/* Container da imagem (com overflow) */}
+                  <div className="absolute inset-0 overflow-hidden rounded-t-xl">
+                    <img
+                      src={project.image}
+                      alt={`Screenshot do projeto ${project.title}`}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                    />
+                  </div>
+
+                  {/* Gradiente */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-card/90 via-card/20 to-transparent rounded-t-xl" />
 
                   {/* Action buttons overlay */}
-                  <div className="absolute top-3 right-3 flex gap-2">
+                  <div className="absolute top-3 right-3 flex gap-2 z-50">
                     <Tooltip>
                       <TooltipTrigger asChild>
                         <Button
@@ -128,7 +230,7 @@ export function Projects() {
                           </a>
                         </Button>
                       </TooltipTrigger>
-                      <TooltipContent>
+                      <TooltipContent side="top">
                         <p>Ver Repositório</p>
                       </TooltipContent>
                     </Tooltip>
@@ -150,7 +252,7 @@ export function Projects() {
                           </a>
                         </Button>
                       </TooltipTrigger>
-                      <TooltipContent>
+                      <TooltipContent side="top">
                         <p>Ver Site</p>
                       </TooltipContent>
                     </Tooltip>
@@ -167,15 +269,27 @@ export function Projects() {
                   </p>
 
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-3 py-1 text-xs font-mono rounded-full bg-primary/10 text-primary border border-primary/20"
-                      >
-                        {tech}
-                      </span>
-                    ))}
+                  <div className="flex flex-wrap gap-3 text-xl">
+                    {project.technologies.map((tech) => {
+                      const techData = techIcons[tech];
+                      if (!techData) return null;
+
+                      return (
+                        <Tooltip key={tech}>
+                          <TooltipTrigger asChild>
+                            <div className="p-2 rounded-lg bg-card border border-border hover:scale-110 transition-all duration-300 cursor-pointer hover:bg-muted">
+                              {React.cloneElement(techData.icon, {
+                                size: 22,
+                                className: techData.className,
+                              })}
+                            </div>
+                          </TooltipTrigger>
+                          <TooltipContent>
+                            <p>{tech}</p>
+                          </TooltipContent>
+                        </Tooltip>
+                      );
+                    })}
                   </div>
                 </div>
               </motion.div>
