@@ -29,14 +29,11 @@ const AluraIcon = () => {
   return (
     <div
       className="w-6 h-6 flex items-center justify-center rounded-md
-      bg-muted text-muted-foreground
+      bg-muted-foreground/80
       transition-colors duration-150 ease-in-out
-      group-hover:bg-blue-900 
-      group-hover:text-white"
+      group-hover:bg-blue-900"
     >
-      <span className="font-lato font-light text-white text-sm leading-none">
-        a
-      </span>
+      <span className="font-lato font-light text-white text-sm leading-none">a</span>
     </div>
   );
 };
@@ -114,7 +111,7 @@ const techIcons: Record<string, { icon: JSX.Element; className: string }> = {
   },
   Alura: {
     icon: <AluraIcon />,
-    className: 'text-muted-foreground',
+    className: 'text-muted-foreground group-hover:text-foreground transition-colors',
   },
 };
 
