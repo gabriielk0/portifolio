@@ -69,8 +69,8 @@ export function Hero() {
           transition={{ delay: 0.7, duration: 0.6 }}
           className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-12 leading-relaxed"
         >
-          Transformando ideias em código. Apaixonado por criar experiências
-          digitais únicas e soluções que fazem a diferença.
+          Transformo ideias em código, porque uma ideia sem iniciativa continua
+          sendo apenas uma ideia.
         </motion.p>
 
         {/* Social Links */}
