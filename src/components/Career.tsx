@@ -1,26 +1,45 @@
-import { motion } from "framer-motion";
-import { Briefcase, GraduationCap, Code } from "lucide-react";
+import { motion } from 'framer-motion';
+import { Briefcase, GraduationCap, Rocket, BookOpen} from 'lucide-react';
 
 const timeline = [
   {
-    year: "2024",
-    title: "Desenvolvedor Full Stack",
-    company: "Empresa Atual",
-    description: "Desenvolvimento de aplicações web modernas utilizando React, Node.js e TypeScript. Liderança técnica em projetos de alta complexidade.",
+    year: '2025+',
+    title: 'Próximos Passos',
+    company: 'Desenvolvimento Profissional',
+    description:
+      'Conclusão prevista da graduação em 2025. Objetivo de crescer como desenvolvedor de sistemas, participar de projetos desafiadores e evoluir continuamente em equipe.',
+    icon: Rocket,
+  },
+  {
+    year: '2025',
+    title: 'Primeira Experiência Profissional - Estágio',
+    company: 'Serpro',
+    description:
+      'Após três anos como auxiliar administrativo, networking na área de tecnologia abriu portas para meu primeiro estágio em desenvolvimento de sistemas no Serpro.',
     icon: Briefcase,
   },
   {
-    year: "2023",
-    title: "Desenvolvedor Front-end",
-    company: "Empresa Anterior",
-    description: "Criação de interfaces responsivas e acessíveis. Implementação de testes automatizados e boas práticas de desenvolvimento.",
-    icon: Code,
+    year: '2022',
+    title: 'Início da Graduação em Ciência da Computação',
+    company: 'Cruzeiro do Sul Virtual',
+    description:
+      'Início da graduação EAD em Ciência da Computação, conciliando trabalho e estudos. Desenvolvimento dos primeiros projetos práticos e aprofundamento técnico.',
+    icon: GraduationCap,
   },
   {
-    year: "2022",
-    title: "Início na Programação",
-    company: "Estudos & Projetos Pessoais",
-    description: "Início da jornada como desenvolvedor, aprendendo fundamentos de programação e desenvolvendo projetos pessoais.",
+    year: '2020',
+    title: 'Ingresso na Engenharia da Computação',
+    company: 'Empresa Anterior',
+    description:
+      'Aprovado no PAS (Programa de Avaliação Seriada) para Engenharia da Computação. Apesar de não ter dado continuidade por questões pessoais, a experiência reforçou meu objetivo de atuar na área.',
+    icon: BookOpen,
+  },
+  {
+    year: '2019',
+    title: 'Início da Jornada',
+    company: 'Cursos Online',
+    description:
+      'Primeiro contato com programação por meio de cursos de HTML e CSS. Descobri a paixão por transformar ideias em interfaces visuais e vi na área a possibilidade de liberdade profissional.',
     icon: GraduationCap,
   },
 ];
@@ -32,7 +51,7 @@ export function Career() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, margin: '-100px' }}
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
@@ -53,19 +72,23 @@ export function Career() {
               key={item.year}
               initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true, margin: "-50px" }}
+              viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               className={`relative flex items-start gap-8 mb-12 ${
-                index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
               }`}
             >
               {/* Timeline dot */}
               <div className="absolute left-8 md:left-1/2 w-4 h-4 rounded-full bg-primary glow-effect -translate-x-1/2 z-10" />
 
               {/* Content */}
-              <div className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+              <div
+                className={`ml-16 md:ml-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-12 md:text-right' : 'md:pl-12'}`}
+              >
                 <div className="glass-card rounded-xl p-6 hover-lift">
-                  <div className={`flex items-center gap-3 mb-3 ${index % 2 === 0 ? "md:justify-end" : ""}`}>
+                  <div
+                    className={`flex items-center gap-3 mb-3 ${index % 2 === 0 ? 'md:justify-end' : ''}`}
+                  >
                     <div className="p-2 rounded-lg bg-primary/10">
                       <item.icon className="w-5 h-5 text-primary" />
                     </div>
